@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         ConexionSQLiteHelper con = new ConexionSQLiteHelper(this,"bd_usuarios",null,1);
         try{
             SQLiteDatabase db = con.getWritableDatabase();
+            
 
             db.execSQL("INSERT INTO usuario VALUES('14401032','Jose Carlos GUerra Robles','TICs')");
             db.execSQL("INSERT INTO usuario VALUES('14401032','Jose Carlos GUerra Robles','TICs')");
